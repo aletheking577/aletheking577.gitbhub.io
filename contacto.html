@@ -1,12 +1,12 @@
 <html>
     <head>
      <title>Datos de Contacto</title>
-     <link rel="stylesheet" type="text/css" href="styles.css">
+     <link rel="stylesheet" type="text/css" href="/css/styles.css">
     </head>
-
 
    
     <body>
+      <form action="enviar.html" method="POST">
       <header>
          <div class="logo">
             <img src="./images/foto.jpg">
@@ -21,34 +21,48 @@
             <a href="contacto.html" class="contacto">Contacto</a>
          </nav>
       </header>
-        <h1>Datos de Contacto</h1>
-        <br>
-         <fieldset> <!------------------ APERTURA DE "DATOS DEL CLIENTE" -------------------->
+         
+         <br><div class ="title">
+              <h1 style="color: white;">Datos de Contacto</h1>
+            </div>
+         <br> 
+       <div class="campo1">
+        <fieldset style="color: white;"> <!------------------ APERTURA DE "DATOS DEL CLIENTE" -------------------->
+            <legend><strong>
+              Info Personal
+            </legend></strong>
+            <br> 
             <div>
-             <label for="Nombre">Nombre</label> <br>
-             <input type="text">
+             <label for ="Name">Nombre</label> <br>
+             <input type ="text" id="name" name="name">
             </div>
             <div>
-             <label>Apellidos</label> <br>
-             <input type="text">
+             <label for = "surname">Apellidos</label> <br>
+             <input type ="text" id="surname" name="surname">
             </div>
             <div>
              <label>Teléfono</label> <br>
-             <input type="text">
+             <input type ="text" id= "phone_numer" name="phone_number">
             </div>
             <div> 
                 <label>Correo</label> <br>
-             <input type="email" name="emailaddress">
+             <input type="email" id= "emailaddress" name="emailaddress">
             </div> <!------------------ CIERRE DE "DATOS DEL CLIENTE" -------------------->
          </fieldset>
+      </div>
          <br>
          <br>
-         <fieldset><!------------------ APERTURA DE "CONTACTO" -------------------->
+         <fieldset style="color: white;"><!------------------ APERTURA DE "CONTACTO" -------------------->
+            <legend><strong>
+              Info Contacto
+            </legend></strong>
             <div>
              <label><strong>Seleccionar metodo de contacto preferible de respuesta:</strong></label><br>
-             <label>Telefono</label><input type="checkbox"> <br>
-             <lable>Correo</lable><input type="checkbox"> <br>
-             <br><label>Asunto</label>
+             <br>
+             <label>Telefono</label>  <input type="checkbox"> <br>
+             <br>
+             <label>Correo</label>  <input type="checkbox"> <br>
+             <br><label><strong>Asunto</strong></label>
              <select> 
                <option>Interesado/a</option> 
                <option>Cuestiones</option>
@@ -57,15 +71,24 @@
             <div>
               <br>
               <label><strong>Deja un mensaje:</strong></label> <br>
-              <textarea>
-              </textarea>
+              <textarea id="descripcion" name="description" cols="40" rows="10" ></textarea>
+              <input type="radio" name="estado" value="terminado"> Terminado
               <br>
               
             </div>
          </fieldset><!------------------ CIERRE DE "CONTACTO" -------------------->
                     <!------------------ BOTON PARA ENVIAR O RESETEAR FORMULARIO -------------------->
-         <br><input type="submit"> 
-         <input type="reset"> 
-         
+         <br>
+         <div class="botton">
+            <input type="submit"> <br>
+            <input type="reset"> 
+            </div>
+      </form> 
+      <!------------------ PIE DE PÁGINA -------------------->
+      <div class="footer">
+         <div class="body">
+         <h2>Curriculum Vitae</h2>
+         </div>
+      </div>  
     </body>
 </html>

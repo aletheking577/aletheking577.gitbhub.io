@@ -28,6 +28,9 @@ header{
 
 body{ 
 background-image: url(/images/foto2.jpg);  
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
 display:flex;
 flex-direction: column;
 font-family: sans-serif;
